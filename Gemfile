@@ -21,22 +21,27 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass'
 
 
-group : development, :test do
+group :development, :test do
  gem 'sqlite3'
 end
 
-group : production, :test do
+group :production, :test do
  gem 'pg'
  gem 'rails_12factor'
 end
 
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
+
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  ## Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end
 
 group :development do
-  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
+  ## Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
 end
 
