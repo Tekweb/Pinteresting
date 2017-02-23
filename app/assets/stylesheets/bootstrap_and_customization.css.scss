@@ -1,11 +1,22 @@
 
-$body-bg:      #2980b9;
-$navbar-inverse-bg: #1abc9c;
-$navbar-inverse-link-color: white;
-$brand-primary: #2ecc71;
-$jumbotron-bg : #f39c12;
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+
+$body-bg:      #ecf0f1;
+$font-family-sans-serif: 'Oswald', sans-serif;
+$navbar-height:  45px;
+$navbar-default-bg: white;
+$navbar-default-brand-color: #c0392b;
+$brand-primary: #c0392b;
+$jumbotron-bg :  white;
 
 
 
 @import 'bootstrap';
 
+.center {
+  text-align: center;
+  }
+
+.navbar-brand{
+  font-weight:bold;
+}
